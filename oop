@@ -1,0 +1,2905 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TY Time Table</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .table {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mt-3">TY Time Table</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time Slot</th>
+          <th>Subject Name</th>
+          <th>Faculty Initials</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>10:00 AM - 11:00 AM</td>
+          <td>Web Development</td>
+          <td>JD</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>11:00 AM - 12:00 PM</td>
+          <td>Database Management</td>
+          <td>SK</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 AM - 10:00 AM</td>
+          <td>Software Engineering</td>
+          <td>RS</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>2:00 PM - 3:00 PM</td>
+          <td>Networking</td>
+          <td>MS</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>12:00 PM - 1:00 PM</td>
+          <td>Computer Graphics</td>
+          <td>PT</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Time Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mt-3">Railway Time Table</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Train Number</th>
+          <th>Train Name</th>
+          <th>Departure Time</th>
+          <th>Arrival Time</th>
+          <th>From</th>
+          <th>To</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>Express</td>
+          <td>09:00 AM</td>
+          <td>12:00 PM</td>
+          <td>Surat</td>
+          <td>Mumbai</td>
+        </tr>
+        <tr>
+          <td>54321</td>
+          <td>Superfast</td>
+          <td>02:00 PM</td>
+          <td>05:00 PM</td>
+          <td>Chandigarh</td>
+          <td>Jaipur</td>
+        </tr>
+        <tr>
+          <td>67890</td>
+          <td>Local</td>
+          <td>07:00 AM</td>
+          <td>09:00 AM</td>
+          <td>Mumbai</td>
+          <td>Pune</td>
+        </tr>
+        <tr>
+          <td>09876</td>
+          <td>Express</td>
+          <td>03:00 PM</td>
+          <td>06:00 PM</td>
+          <td>Navsari</td>
+          <td>Mumbai</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #cce5ff;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-3 {
+    margin-top: 1rem !important;
+  }
+  
+
+
+
+
+
+
+========
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Registration Form</title>
+    <style>
+        /* Form Style */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Gmail Registration Form</h2>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br>
+        <span id="fullNameError" class="error-message"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+        <span id="emailError" class="error-message"></span><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <span id="passwordError" class="error-message"></span><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function validateForm() {
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var isValid = true;
+
+            // Validate Full Name
+            if (fullName == "") {
+                document.getElementById("fullNameError").innerHTML = "Please enter your full name.";
+                isValid = false;
+            } else {
+                document.getElementById("fullNameError").innerHTML = "";
+            }
+
+            // Validate Email
+            if (email == "") {
+                document.getElementById("emailError").innerHTML = "Please enter your email address.";
+                isValid = false;
+            } else if (!validateEmail(email)) {
+                document.getElementById("emailError").innerHTML = "Please enter a valid email address.";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").innerHTML = "";
+            }
+
+            // Validate Password
+            if (password == "") {
+                document.getElementById("passwordError").innerHTML = "Please enter a password.";
+                isValid = false;
+            } else if (password.length < 8) {
+                document.getElementById("passwordError").innerHTML = "Password must be at least 8 characters long.";
+                isValid = false;
+            } else {
+                document.getElementById("passwordError").innerHTML = "";
+            }
+
+            return isValid;
+        }
+
+        // Function to validate email address
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+============
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Garment Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Garment Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Page Content -->
+  <div class="container mt-4">
+    <h2>Contact Us</h2>
+    <p>Have a question? Contact us!</p>
+    <form>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Garment Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Garment Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Page Content -->
+  <div class="container mt-4">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to Garment Store</h1>
+      <p class="lead">Explore our collection of trendy garments at unbeatable prices.</p>
+      <hr class="my-4">
+      <p>Shop now and upgrade your wardrobe!</p>
+      <a class="btn btn-primary btn-lg" href="products.html" role="button">Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Garment Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Garment Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products Page Content -->
+  <div class="container mt-4">
+    <h2 class="mb-4">Our Products</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Description of Product 1.</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">Description of Product 2.</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">Description of Product 3.</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+==================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="Calculator">
+     
+         <input type="text" id="display" readonly>
+
+        <div class="container">
+            <button class="but" onclick="currentDisplay = '';
+            document.querySelector('#display').value=currentDisplay">C</button>
+
+           <button class="but" onclick="currentDisplay = currentDisplay +'1';
+           document.querySelector('#display').value=currentDisplay">1</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'2';
+           document.querySelector('#display').value=currentDisplay">2</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'3';
+           document.querySelector('#display').value=currentDisplay">3</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'4';
+           document.querySelector('#display').value=currentDisplay">4</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'5';
+           document.querySelector('#display').value=currentDisplay">5</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'6';
+           document.querySelector('#display').value=currentDisplay">6</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'7';
+           document.querySelector('#display').value=currentDisplay">7</button> 
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'8';
+           document.querySelector('#display').value=currentDisplay">8</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'9';
+           document.querySelector('#display').value=currentDisplay">9</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'0';
+           document.querySelector('#display').value=currentDisplay">0</button>
+           
+           <button class="but"onclick="currentDisplay = currentDisplay +'-';
+           document.querySelector('#display').value=currentDisplay">-</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'/';
+           document.querySelector('#display').value=currentDisplay">/</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'*';
+           document.querySelector('#display').value=currentDisplay">*</button>
+
+           <button class="but"onclick="currentDisplay = currentDisplay +'+';
+           document.querySelector('#display').value=currentDisplay">+</button>
+
+           <button class="but"onclick="
+           let result =eval(currentDisplay);
+           currentDisplay =result;
+           
+           document.querySelector('#display').value=currentDisplay">=</button>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <script>
+        let currentDisplay='';
+        document.querySelector('#display').value= currentDisplay; 
+    </script>
+</body>
+</html>
+
+
+
+#Calculator {
+    border-radius: 1px; /* 'radius' should be 'radius' */
+    border: 5px solid black; /* Specify border style */
+    width: 200px; /* Changed width to 200px for visibility */
+    
+     /* Add color property to make text visible */
+}
+
+#display{
+    margin: 10px;
+    width: 85%;
+    font-size: 25px;
+}
+
+.container {
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.but{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+}
+
+
+=======================================
+-- First Create a database named complaint_management_system in XAMPP Server under phpMyAdmin
+-- Then run the following SQL commands to create the vehicles table
+
+CREATE DATABASE complaint_management_system;
+
+CREATE TABLE complaints (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    department VARCHAR(255) NOT NULL,
+    complaint TEXT NOT NULL,
+    status ENUM('Pending', 'Resolved') DEFAULT 'Pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Complaint Management System</h1>
+        <form action="submit_complaint.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required> 
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+            </select><br><br>
+
+            <label for="complaint">Complaint:</label><br>
+            <textarea id="complaint" name="complaint" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+
+<?php
+// Database connection
+$con = mysqli_connect('localhost', 'root', '', 'complaint_management_system');
+
+// Check if the database connection was successful
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    exit();
+}
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $name = mysqli_real_escape_string($con, $_POST['name']);
+    $email = mysqli_real_escape_string($con, $_POST['email']);
+    $department = mysqli_real_escape_string($con, $_POST['department']);
+    $complaint = mysqli_real_escape_string($con, $_POST['complaint']);
+
+    // Insert complaint into database
+    $sql = "INSERT INTO complaints (name, email, department, complaint) VALUES ('$name', '$email', '$department', '$complaint')";
+
+    if (mysqli_query($con, $sql)) {
+        echo "<script>alert('Complaint submitted successfully!');</script>";
+        echo "<script>window.location.href = 'index.php';</script>";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+} else {
+    // Redirect back to the registration form if accessed directly
+    header("Location: index.php");
+    exit();
+}
+
+// Close connection
+mysqli_close($con); 
+?>
+
+
+
+
+
+<?php
+// Database connection
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$database = "complaint_management_system";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch complaints from database
+$sql = "SELECT * FROM complaints";
+$result = $conn->query($sql);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Complaints - Complaint Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Complaint Management System</h1>
+        <h2>View Complaints</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Complaint</th>
+                <th>Status</th>
+                <th>Created At</th>
+            </tr>
+            <?php
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $row['name'] . "</td>";
+                    echo "<td>" . $row['email'] . "</td>";
+                    echo "<td>" . $row['department'] . "</td>";
+                    echo "<td>" . $row['complaint'] . "</td>";
+                    echo "<td>" . $row['status'] . "</td>";
+                    echo "<td>" . $row['created_at'] . "</td>";
+                    echo "</tr>";
+                }
+            } else {
+                echo "<tr><td colspan='6'>No complaints found</td></tr>";
+            }
+            ?>
+        </table>
+    </div>
+</body>
+</html>
+
+<?php
+// Close connection
+$conn->close();
+?>
+
+=======================
+
+-- First Create a database named toll_tax_management_system in XAMPP Server under phpMyAdmin
+-- Then run the following SQL commands to create the vehicles table
+
+CREATE DATABASE toll_tax_management_system;
+
+CREATE TABLE vehicles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    vehicle_number VARCHAR(20) NOT NULL,
+    vehicle_type ENUM('Car', 'Bus', 'Truck') NOT NULL,
+    toll_amount DECIMAL(10, 2) NOT NULL,
+    payment_status ENUM('Paid', 'Unpaid') DEFAULT 'Unpaid',
+    entry_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toll Tax Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Toll Tax Management System</h1>
+        <form action="submit_vehicle.php" method="POST">
+            <label for="vehicle_number">Vehicle Number:</label>
+            <input type="text" id="vehicle_number" name="vehicle_number" required><br><br>
+
+            <label for="vehicle_type">Vehicle Type:</label>
+            <select id="vehicle_type" name="vehicle_type" required>
+                <option value="Car">Car</option>
+                <option value="Bus">Bus</option>
+                <option value="Truck">Truck</option>
+            </select><br><br>
+
+            <label for="toll_amount">Toll Amount:</label>
+            <input type="text" id="toll_amount" name="toll_amount" required><br><br>
+
+            <button type="submit">Submit Vehicle Details</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+
+
+
+
+<?php
+// Database connection
+$servername = "localhost";
+$username = "root"; // Default username for MySQL
+$password = "";     // Default password for MySQL is empty
+$database = "toll_tax_management_system";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Escape user inputs for security
+$vehicle_number = $conn->real_escape_string($_POST['vehicle_number']);
+$vehicle_type = $conn->real_escape_string($_POST['vehicle_type']);
+$toll_amount = $conn->real_escape_string($_POST['toll_amount']);
+
+// Insert vehicle details into database
+$sql = "INSERT INTO vehicles (vehicle_number, vehicle_type, toll_amount) VALUES ('$vehicle_number', '$vehicle_type', '$toll_amount')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "<script>alert('Vehicle details submitted successfully!');</script>";
+    echo "<script>window.location.href = 'index.php';</script>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Close connection
+$conn->close();
+?>
+
+
+
+
+<?php
+// Database connection
+$servername = "localhost";
+$username = "root"; // Default username for MySQL
+$password = "";     // Default password for MySQL is empty
+$database = "toll_tax_management_system";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch vehicle details from database
+$sql = "SELECT * FROM vehicles";
+$result = $conn->query($sql);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Vehicles - Toll Tax Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Toll Tax Management System</h1>
+        <h2>View Vehicle Details</h2>
+        <table>
+            <tr>
+                <th>Vehicle Number</th>
+                <th>Vehicle Type</th>
+                <th>Toll Amount</th>
+                <th>Payment Status</th>
+                <th>Entry Time</th>
+            </tr>
+            <?php
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $row['vehicle_number'] . "</td>";
+                    echo "<td>" . $row['vehicle_type'] . "</td>";
+                    echo "<td>" . $row['toll_amount'] . "</td>";
+                    echo "<td>" . $row['payment_status'] . "</td>";
+                    echo "<td>" . $row['entry_time'] . "</td>";
+                    echo "</tr>";
+                }
+            } else {
+                echo "<tr><td colspan='5'>No vehicles found</td></tr>";
+            }
+            ?>
+        </table>
+    </div>
+</body>
+</html>
+
+<?php
+// Close connection
+$conn->close();
+?>
+
+
+
+===================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Form</title>
+</head>
+<body>
+    <h1>Simple HTML Form</h1>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+=================================
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+    <script>
+        // JavaScript function to change text color
+        function changeColor() {
+            document.getElementById("text").style.color = "red";
+        }
+
+        // JavaScript function to display an alert message
+        function showAlert() {
+            alert("Button clicked!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Event Handlers</h1>
+    <button onclick="changeColor()">Change Text Color</button>
+    <p id="text">This is a sample text.</p>
+    <button onclick="showAlert()">Click Me</button>
+</body>
+</html>
+==============================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+    <script>
+        function generateFibonacci() {
+            // Get the number of terms from the input field
+            var numTerms = document.getElementById("numTerms").value;
+
+            // Initialize variables to store Fibonacci series
+            var fib = [];
+            fib[0] = 0;
+            fib[1] = 1;
+
+            // Generate Fibonacci series
+            for (var i = 2; i < numTerms; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+
+            // Display Fibonacci series on the HTML page
+            document.getElementById("result").innerHTML = "Fibonacci Series: " + fib.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Fibonacci Series</h1>
+    <label for="numTerms">Enter the number of terms:</label>
+    <input type="number" id="numTerms" name="numTerms" min="1" value="1">
+    <button onclick="generateFibonacci()">Generate Fibonacci Series</button>
+    <p id="result"></p>
+</body>
+</html>
+============================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            // Check if username is empty
+            if (username == "") {
+                alert("Please enter a username.");
+                return false;
+            }
+
+            // Check if password is empty
+            if (password == "") {
+                alert("Please enter a password.");
+                return false;
+            }
+
+            // Check if password and confirm password match
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            // Validation passed, display username
+            alert("Welcome, " + username + "!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
+======================
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var organization = document.getElementById("organization").value;
+            var hobbies = document.getElementById("hobbies").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+           
+            if (firstName.trim() == "") {
+                alert("Please enter your first name.");
+                return false;
+            }
+
+            // Check if last name is empty
+            if (lastName.trim() == "") {
+                alert("Please enter your last name.");
+                return false;
+            }
+
+            // Check if organization is empty
+            if (organization.trim() == "") {
+                alert("Please enter your organization.");
+                return false;
+            }
+
+            // Check if hobbies is empty
+            if (hobbies.trim() == "") {
+                alert("Please enter your hobbies.");
+                return false;
+            }
+
+            // Check if password is empty
+            if (password.trim() == "") {
+                alert("Please enter a password.");
+                return false;
+            }
+
+            // Check if password and confirm password match
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            // Display details
+            var userDetails = "Registration successful!\n\n" +
+                              "First Name: " + firstName + "\n" +
+                              "Last Name: " + lastName + "\n" +
+                              "Organization: " + organization + "\n" +
+                              "Hobbies: " + hobbies;
+
+            alert(userDetails);
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="return validateForm()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="organization">Organization:</label>
+        <input type="text" id="organization" name="organization" required><br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+
+
+====================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Image Gallery</h1>
+        <div class="row gallery">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" alt="Image 1">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" alt="Image 2">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" alt="Image 3">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" alt="Image 4">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" alt="Image 5">
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/300" alt="Image 6">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+=======================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+</head>
+<body>
+    <h1>Video Page</h1>
+    <video width="640" height="360" controls>
+       
+
+        <source src="https://youtu.be/6I2N1b7dN60" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+============================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Popup</title>
+    <style>
+        /* Notification Popup CSS */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .popup-container h2 {
+            margin-top: 0;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Notification Popup HTML -->
+    <div class="popup-container" id="popupContainer">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Notification</h2>
+        <p>This is a notification popup.</p>
+    </div>
+
+    <button onclick="showPopup()">Show Notification</button>
+
+    <script>
+        // JavaScript function to show notification popup
+        function showPopup() {
+            var popup = document.getElementById("popupContainer");
+            popup.style.display = "block";
+            setTimeout(function(){
+                popup.style.display = "none";
+            }, 3000); // Close popup after 3 seconds
+        }
+
+        // JavaScript function to close notification popup 
+        function closePopup() {
+            var popup = document.getElementById("popupContainer");
+            popup.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+===================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Example</title>
+</head>
+<body>
+    <h1>Cookies Example</h1>
+    <button onclick="setCookie()">Set Cookie</button>
+    <button onclick="getCookie()">Get Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+
+    <script>
+        // JavaScript function to set a cookie
+        function setCookie() {
+            document.cookie = "username=Dev Govidani; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+            alert("Cookie set successfully!");
+        }
+
+        // JavaScript function to get a cookie
+        function getCookie() {
+            var cookieValue = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('username='))
+                .split('=')[1];
+            alert("Username: " + cookieValue);
+        }
+
+        // JavaScript function to delete a cookie
+        function deleteCookie() {
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            alert("Cookie deleted successfully!");
+        }
+    </script>
+</body>
+</html>
+============================================
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "ecommerce";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+
+
+
+
+
+CREATE DATABASE ecommerce;
+
+USE ecommerce;
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    description TEXT,
+    image VARCHAR(255)
+);
+
+
+
+
+
+
+<?php
+include 'config.php';
+
+$sql = "SELECT * FROM products";
+$result = $conn->query($sql);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Platform</title>
+</head>
+<body>
+    <h1>Welcome to our E-commerce Platform</h1>
+    
+    <?php
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            echo "<div>";
+            echo "<h2>" . $row["name"] . "</h2>";
+            echo "<p>" . $row["description"] . "</p>";
+            echo "<p>Price: $" . $row["price"] . "</p>";
+            echo "<img src='" . $row["image"] . "' alt='" . $row["name"] . "' width='200'>";
+            echo "<button>Add to Cart</button>";
+            echo "</div>";
+        }
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+    ?>
+</body>
+</html>
+
+
+
+====================
+
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    quantity INT NOT NULL
+);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grocery Store</title>
+</head>
+<body>
+    <h1>Welcome to our Grocery Store</h1>
+    <h2>Product List</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <?php
+        // Connect to MySQL
+        $conn = new mysqli("localhost", "root", "", "grocery_store");
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // Fetch products from database
+        $sql = "SELECT * FROM products";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            // Output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . $row["id"] . "</td>";
+                echo "<td>" . $row["name"] . "</td>";
+                echo "<td>$" . $row["price"] . "</td>";
+                echo "</tr>";
+            }
+        } else {
+            echo "<tr><td colspan='4'>No products found</td></tr>";
+        }
+        $conn->close();
+        ?>
+    </table>
+</body>
+</html>
+======================
+
+
+-- Open your web browser and go to http://localhost/phpmyadmin.
+-- Click on "New" to create a new database.
+-- Database Name: facebook
+-- Collation: utf8mb4_unicode_ci
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
+
+
+db
+<?php
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'facebook';
+
+$conn = mysqli_connect($host, $username, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
+
+
+
+
+
+
+
+index
+
+
+<?php
+session_start();
+require_once 'db.php';
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit;
+}
+
+$user_id = $_SESSION['user_id'];
+$query = "SELECT * FROM users WHERE id = $user_id";
+$result = mysqli_query($conn, $query);
+$user = mysqli_fetch_assoc($result);
+
+$query = "SELECT * FROM posts ORDER BY created_at DESC";
+$result = mysqli_query($conn, $query);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome, <?php echo $user['username']; ?>!</h1>
+        <a href="logout.php">Logout</a>
+        <form action="post.php" method="post">
+            <textarea name="content" placeholder="What's on your mind?"></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div class="posts">
+            <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+                <div class="post">
+                    <p><?php echo $row['content']; ?></p>
+                    <span><?php echo $row['created_at']; ?></span>
+                </div>
+            <?php endwhile; ?>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+login
+<?php
+session_start();
+require_once 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $query = "SELECT * FROM users WHERE email = '$email'";
+    $result = mysqli_query($conn, $query);
+    $user = mysqli_fetch_assoc($result);
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user_id'] = $user['id'];
+        header("Location: index.php");
+        exit;
+    } else {
+        $error = "Invalid email or password";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <?php if (isset($error)) : ?>
+            <p><?php echo $error; ?></p>
+        <?php endif; ?>
+        <form action="" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.php">Register</a></p>
+    </div>
+</body>
+logout
+</html>
+post
+<?php
+session_start();
+session_unset();
+session_destroy();
+header("Location: login.php");
+exit;
+?>
+post
+
+<?php
+session_start();
+require_once 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user_id = $_SESSION['user_id'];
+    $content = $_POST['content'];
+
+    $query = "INSERT INTO posts (user_id, content) VALUES ($user_id, '$content')";
+    mysqli_query($conn, $query);
+
+    header("Location: index.php");
+    exit;
+}
+?>
+register
+<?php
+require_once 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+    mysqli_query($conn, $query);
+
+    header("Location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    margin: 0;
+}
+
+.post span {
+    font-size: 12px;
+    color: #888;
+}
+
+
+
+
+
+====================
+
+
+
+-- Open your web browser and go to http://localhost/phpmyadmin.
+-- Click on "New" to create a new database.
+-- Database Name: library
+-- Collation: utf8mb4_unicode_ci
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    description TEXT,
+    image VARCHAR(255)
+);
+
+INSERT INTO books (title, author, description, image) VALUES 
+('Book 1', 'Author 1', 'Description of Book 1', 'book1.jpg'),
+('Book 2', 'Author 2', 'Description of Book 2', 'book2.jpg'),
+('Book 3', 'Author 3', 'Description of Book 3', 'book3.jpg');
+
+
+
+
+<?php
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'library';
+
+$conn = mysqli_connect($host, $username, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
+
+
+
+
+
+
+
+<?php
+require_once 'db.php';
+
+$query = "SELECT * FROM books";
+$result = mysqli_query($conn, $query);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Library Catalog</h1>
+        <div class="books">
+            <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+                <div class="book">
+                    <img src="images/<?php echo $row['image']; ?>" alt="<?php echo $row['title']; ?>">
+                    <h2><?php echo $row['title']; ?></h2>
+                    <h3>By <?php echo $row['author']; ?></h3>
+                    <p><?php echo $row['description']; ?></p>
+                </div>
+            <?php endwhile; ?>
+        </div>
+    </div>
+</body>
+
+</html>
+ 
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.book {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book h2 {
+    margin-top: 0;
+}
+
+.book h3 {
+    margin-top: 5px;
+    color: #888;
+}
+
+.book p {
+    margin: 10px 0;
+}
+
+
+=====================
+<?php
+require_once 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    $query = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+    mysqli_query($conn, $query);
+
+    header("Location: index.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add User</h1>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+-- Open your web browser and go to http://localhost/phpmyadmin.
+-- Click on "New" to create a new database.
+-- Database Name: crud_app
+-- Collation: utf8mb4_unicode_ci
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+
+
+
+
+<?php
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'crud_app';
+
+$conn = mysqli_connect($host, $username, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
+
+
+delete
+
+<?php
+require_once 'db.php';
+
+$id = $_GET['id'];
+$query = "DELETE FROM users WHERE id = $id";
+mysqli_query($conn, $query);
+
+header("Location: index.php");
+exit;
+?>
+
+
+edit
+
+<?php
+require_once 'db.php';
+
+$id = $_GET['id'];
+$query = "SELECT * FROM users WHERE id = $id";
+$result = mysqli_query($conn, $query);
+$user = mysqli_fetch_assoc($result);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    $query = "UPDATE users SET name = '$name', email = '$email' WHERE id = $id";
+    mysqli_query($conn, $query);
+
+    header("Location: index.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edit User</h1>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Name" value="<?php echo $user['name']; ?>" required>
+            <input type="email" name="email" placeholder="Email" value="<?php echo $user['email']; ?>" required>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+
+index
+
+<?php
+require_once 'db.php';
+
+$query = "SELECT * FROM users";
+$result = mysqli_query($conn, $query);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD Application</h1>
+        <a href="add.php" class="btn">Add User</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['name']; ?></td>
+                        <td><?php echo $row['email']; ?></td>
+                        <td>
+                            <a href="edit.php?id=<?php echo $row['id']; ?>" class="btn">Edit</a>
+                            <a href="delete.php?id=<?php echo $row['id']; ?>" class="btn">Delete</a>
+                        </td>
+                    </tr>
+                <?php endwhile; ?>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+===============================================
+
+
+alert("JS file linked successfully!");
+const averageHumanLifespanYears = 60; 
+const weeksInYear = 52; 
+
+const averageWeeksInLifetime = averageHumanLifespanYears * weeksInYear;
+
+
+console.log("Average number of weeks in human lifetime:", averageWeeksInLifetime);
+const currentHour = new Date().getHours();
+
+function getTimeOfDay(hour) {
+  if (hour >= 5 && hour < 12) {
+    return "morning";
+  } else if (hour >= 12 && hour < 18) {
+    return "afternoon";
+  } else {
+    return "night";
+  }
+}
+
+const timeOfDay = getTimeOfDay(currentHour);
+console.log("Time of the day:", timeOfDay);
+console.log("Hour of the day:", currentHour);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linking JS File</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Linking JS File</h1>
+</body>
+</html>
+<script src=""></script>
+
+
+
+alert("JS file linked successfully!");
+const averageHumanLifespanYears = 60; 
+const weeksInYear = 52; 
+
+const averageWeeksInLifetime = averageHumanLifespanYears * weeksInYear;
+
+
+console.log("Average number of weeks in human lifetime:", averageWeeksInLifetime);
+const currentHour = new Date().getHours();
+
+function getTimeOfDay(hour) {
+  if (hour >= 5 && hour < 12) {
+    return "morning";
+  } else if (hour >= 12 && hour < 18) {
+    return "afternoon";
+  } else {
+    return "night";
+  }
+}
+
+const timeOfDay = getTimeOfDay(currentHour);
+console.log("Time of the day:", timeOfDay);
+console.log("Hour of the day:", currentHour);
+===========================
+
+
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Database connection
+    $con = mysqli_connect('localhost', 'root', '', 'gym_registration');
+
+    // Check connection
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        exit();
+    }
+
+    // Get form data
+    $txtfname = mysqli_real_escape_string($con, $_POST['fullname']);
+    $email = mysqli_real_escape_string($con, $_POST['email']);
+    $phone = mysqli_real_escape_string($con, $_POST['phone']);
+    $gender = mysqli_real_escape_string($con, $_POST['gender']);
+    $dob = mysqli_real_escape_string($con, $_POST['dob']);
+    $address = mysqli_real_escape_string($con, $_POST['address']);
+    $emergency_contact = mysqli_real_escape_string($con, $_POST['emergency_contact']);
+    $medical_info = mysqli_real_escape_string($con, $_POST['medical_info']);
+    $goals_interests = implode(", ", $_POST['goals_interests']);
+    $membership = mysqli_real_escape_string($con, $_POST['membership']);
+    $payment_method = mysqli_real_escape_string($con, $_POST['payment_method']);
+    // Since we removed the terms_conditions field, we don't need to retrieve it from the form data
+
+    // Insert data into database
+    $sql = "INSERT INTO `registration` (`fullname`, `email`, `phone`, `gender`, `dob`, `address`, `emergency_contact`, `medical_info`, `goals_interests`, `membership`, `payment_method`) 
+            VALUES ('$txtfname', '$email', '$phone', '$gender', '$dob', '$address', '$emergency_contact', '$medical_info', '$goals_interests', '$membership', '$payment_method')";
+
+    if (mysqli_query($con, $sql)) {
+        echo "Registration successful!";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+
+    // Close connection
+    mysqli_close($con);
+} else {
+    // Redirect back to the registration form if accessed directly
+    header("Location: registration_form.html");
+    exit();
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Registration Form</title>
+<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<body>
+<div class="container">
+    <h2>Gym Registration Form</h2>
+    <form action="register.php" method="post">
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="emergency_contact">Emergency Contact Information:</label>
+            <input type="text" id="emergency_contact" name="emergency_contact" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="medical_info">Medical Information:</label>
+            <textarea id="medical_info" name="medical_info"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Goals:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="weight_loss" name="goals_interests[]" value="weight_loss">
+                <label for="weight_loss">Weight Loss</label>
+                
+                <input type="checkbox" id="muscle_gain" name="goals_interests[]" value="muscle_gain">
+                <label for="muscle_gain">Muscle Gain</label>
+                
+                <input type="checkbox" id="improving_endurance" name="goals_interests[]" value="improving_endurance">
+                <label for="improving_endurance">Improving Endurance</label>
+                
+                <input type="checkbox" id="flexibility_mobility" name="goals_interests[]" value="flexibility_mobility">
+                <label for="flexibility_mobility">Flexibility & Mobility</label>
+                
+                <input type="checkbox" id="strength_training" name="goals_interests[]" value="strength_training">
+                <label for="strength_training">Strength Training</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="membership">Membership Type:</label>
+            <select id="membership" name="membership" required>
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="payment_method">Preferred Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="direct_debit">Direct Debit</option>
+                <option value="cash">Cash</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+            <label for="terms_conditions">I agree to the Terms and Conditions</label>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Registration Form</title>
+<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<body>
+<div class="container">
+    <h2>Gym Registration Form</h2>
+    <form action="register.php" method="post">
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="emergency_contact">Emergency Contact Information:</label>
+            <input type="text" id="emergency_contact" name="emergency_contact" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="medical_info">Medical Information:</label>
+            <textarea id="medical_info" name="medical_info"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Goals:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="weight_loss" name="goals_interests[]" value="weight_loss">
+                <label for="weight_loss">Weight Loss</label>
+                
+                <input type="checkbox" id="muscle_gain" name="goals_interests[]" value="muscle_gain">
+                <label for="muscle_gain">Muscle Gain</label>
+                
+                <input type="checkbox" id="improving_endurance" name="goals_interests[]" value="improving_endurance">
+                <label for="improving_endurance">Improving Endurance</label>
+                
+                <input type="checkbox" id="flexibility_mobility" name="goals_interests[]" value="flexibility_mobility">
+                <label for="flexibility_mobility">Flexibility & Mobility</label>
+                
+                <input type="checkbox" id="strength_training" name="goals_interests[]" value="strength_training">
+                <label for="strength_training">Strength Training</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="membership">Membership Type:</label>
+            <select id="membership" name="membership" required>
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="payment_method">Preferred Payment Method:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="direct_debit">Direct Debit</option>
+                <option value="cash">Cash</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+            <label for="terms_conditions">I agree to the Terms and Conditions</label>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>
+
+
+
+====================
+Login.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+</head>
+<body>
+<h2>Login</h2>
+<form action="login_process.php" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
+Logout.php
+<?php
+session_start();
+// Unset all session variables
+$_SESSION = array();
+// Destroy the session
+session_destroy();
+// Delete the session cookie by setting its expiration time to a past value
+setcookie(session_name(), '', time() - 3600, '/');
+// Redirect to the login page after logout
+header("Location: login.php");
+exit();
+?>
+Home.php
+<?php
+session_start();
+// Check if the user is logged in, if not redirect to login page
+if (!isset($_SESSION["username"])) {
+// Check if the remember me cookie is set
+if(isset($_COOKIE['username'])) {
+$_SESSION["username"] = $_COOKIE['username'];
+} else {
+header("Location: login.php");
+exit();
+}
+}
+// Display welcome message
+echo "Welcome, " . $_SESSION["username"] . "!";
+// Provide a logout option
+echo "<br><br><a href='logout.php'>Logout</a>";
+?>
+Login_process.php
+<?php
+session_start();
+// Dummy username and password (you should retrieve these from your database)
+$valid_username = "admin";
+$valid_password = "password";
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ $username = $_POST["username"];
+ $password = $_POST["password"];
+ // Check if username and password are correct
+ if ($username === $valid_username && $password === $valid_password) {
+ // Set session variables
+ $_SESSION["username"] = $username;
+ // Check if remember me is checked
+ if(isset($_POST['remember'])) {
+ // Set the cookie to remember the username for 1 week (adjust as needed)
+ setcookie('username', $username, time() + (7 * 24 * 60 * 60), '/');
+ }
+ // Redirect to the home page or any other page after successful login
+ header("Location: home.php");
+ exit();
+ } else {
+ echo "Invalid username or password.";
+ }
+}
+?>
+Output – ccoki
+=========
+TYCOA31
+Assignment no 5
+Findarea.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post" action="" class="form">
+<div class="first">
+<label class="particles-checkbox-container">
+ <input type="radio" class="particles-checkbox"
+name="shape" value="triangle"
+onclick="showParameters('triangle')">
+ <span>Triangle</span>
+</label>
+<label class="particles-checkbox-container">
+ <input type="radio" class="particles-checkbox"
+name="shape" value="square"
+onclick="showParameters('square')">
+ <span>Sqaure</span>
+</label>
+<label class="particles-checkbox-container">
+ <input type="radio" class="particles-checkbox"
+name="shape" value="circle"
+onclick="showParameters('circle')">
+ <span>Circle</span>
+</label>
+</div>
+<div class="second">
+<div class="shape-parameters" id="triangle-params">
+ Base: <input type="text" name="base"
+class="parameter"><br>
+ Height: <input type="text" name="height"
+class="parameter"><br>
+ </div>
+ <div class="shape-parameters" id="square-params">
+ Side: <input type="text" name="side"
+class="parameter"><br>
+ </div>
+ <div class="shape-parameters" id="circle-params">
+ Radius: <input type="text" name="radius"
+class="parameter"><br>
+ </div>
+ <button type="submit" class="btn" style="margin-top:
+10px; margin-bottom:20px;">Calculate</button>
+ <?php
+class Shape {
+ protected $name;
+ public function __construct($name) {
+ $this->name = $name;
+ }
+ public function getName() {
+ return $this->name;
+ }
+ public function calculateArea() {
+ // Base class method, to be overridden by
+subclasses
+ return 0;
+ }
+}
+class Triangle extends Shape {
+ private $base;
+ private $height;
+ public function __construct($base, $height) {
+ parent::__construct("Triangle");
+ $this->base = $base;
+ $this->height = $height;
+ }
+ public function calculateArea() {
+ return 0.5 * $this->base * $this->height;
+ }
+}
+class Square extends Shape {
+ private $side;
+ public function __construct($side) {
+ parent::__construct("Square");
+ $this->side = $side;
+ }
+ public function calculateArea() {
+ return $this->side * $this->side;
+ }
+}
+class Circle extends Shape {
+ private $radius;
+ public function __construct($radius) {
+ parent::__construct("Circle");
+ $this->radius = $radius;
+ }
+ public function calculateArea() {
+ return M_PI * $this->radius * $this->radius;
+ }
+}
+if (isset($_POST['shape'])) {
+ $selectedShape = $_POST['shape'];
+ switch ($selectedShape) {
+ case 'triangle':
+ $triangle = new Triangle($_POST[ 'base'],
+$_POST['height']);
+ echo "Area of " . $triangle->getName() . ": " .
+$triangle->calculateArea();
+ break;
+ case 'square':
+ $square = new Square($_POST['side']);
+ echo "Area of " . $square->getName() . ": " .
+$square->calculateArea();
+ break;
+ case 'circle':
+ $circle = new Circle($_POST['radius']);
+ echo "Area of " . $circle->getName() . ": " . $circle-
+>calculateArea();
+ break;
+ default:
+ echo "Please select a shape.";
+ break;
+ }
+}
+?>
+</div>
+</form>
+</body>
+<script>
+ function showParameters(shape) {
+ // Hide all shape parameter divs
+ document.querySelectorAll('.shapeparameters').forEach(function (div) {
+ div.style.display = 'none';
+ });
+ // Show the selected shape parameter div
+ document.getElementById(shape + '-
+params').style.display = 'block';
+ }
+</script>
+</html>
+Output:
+==================================
+TYCOA31
+Assignment no 5
+Findarea.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post" action="" class="form">
+<div class="first">
+<label class="particles-checkbox-container">
+ <input type="radio" class="particles-checkbox"
+name="shape" value="triangle"
+onclick="showParameters('triangle')">
+ <span>Triangle</span>
+</label>
+<label class="particles-checkbox-container">
+ <input type="radio" class="particles-checkbox"
+name="shape" value="square"
+onclick="showParameters('square')">
+ <span>Sqaure</span>
+</label>
+<label class="particles-checkbox-container">
+ <input type="radio" class="particles-checkbox"
+name="shape" value="circle"
+onclick="showParameters('circle')">
+ <span>Circle</span>
+</label>
+</div>
+<div class="second">
+<div class="shape-parameters" id="triangle-params">
+ Base: <input type="text" name="base"
+class="parameter"><br>
+ Height: <input type="text" name="height"
+class="parameter"><br>
+ </div>
+ <div class="shape-parameters" id="square-params">
+ Side: <input type="text" name="side"
+class="parameter"><br>
+ </div>
+ <div class="shape-parameters" id="circle-params">
+ Radius: <input type="text" name="radius"
+class="parameter"><br>
+ </div>
+ <button type="submit" class="btn" style="margin-top:
+10px; margin-bottom:20px;">Calculate</button>
+ <?php
+class Shape {
+ protected $name;
+ public function __construct($name) {
+ $this->name = $name;
+ }
+ public function getName() {
+ return $this->name;
+ }
+ public function calculateArea() {
+ // Base class method, to be overridden by
+subclasses
+ return 0;
+ }
+}
+class Triangle extends Shape {
+ private $base;
+ private $height;
+ public function __construct($base, $height) {
+ parent::__construct("Triangle");
+ $this->base = $base;
+ $this->height = $height;
+ }
+ public function calculateArea() {
+ return 0.5 * $this->base * $this->height;
+ }
+}
+class Square extends Shape {
+ private $side;
+ public function __construct($side) {
+ parent::__construct("Square");
+ $this->side = $side;
+ }
+ public function calculateArea() {
+ return $this->side * $this->side;
+ }
+}
+class Circle extends Shape {
+ private $radius;
+ public function __construct($radius) {
+ parent::__construct("Circle");
+ $this->radius = $radius;
+ }
+ public function calculateArea() {
+ return M_PI * $this->radius * $this->radius;
+ }
+}
+if (isset($_POST['shape'])) {
+ $selectedShape = $_POST['shape'];
+ switch ($selectedShape) {
+ case 'triangle':
+ $triangle = new Triangle($_POST[ 'base'],
+$_POST['height']);
+ echo "Area of " . $triangle->getName() . ": " .
+$triangle->calculateArea();
+ break;
+ case 'square':
+ $square = new Square($_POST['side']);
+ echo "Area of " . $square->getName() . ": " .
+$square->calculateArea();
+ break;
+ case 'circle':
+ $circle = new Circle($_POST['radius']);
+ echo "Area of " . $circle->getName() . ": " . $circle-
+>calculateArea();
+ break;
+ default:
+ echo "Please select a shape.";
+ break;
+ }
+}
+?>
+</div>
+</form>
+</body>
+<script>
+ function showParameters(shape) {
+ // Hide all shape parameter divs
+ document.querySelectorAll('.shapeparameters').forEach(function (div) {
+ div.style.display = 'none';
+ });
+ // Show the selected shape parameter div
+ document.getElementById(shape + '-
+params').style.display = 'block';
+ }
+</script>
+</html>
+Output:
+===============
